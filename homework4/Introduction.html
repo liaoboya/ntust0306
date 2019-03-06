@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>20190306-homework4</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 600px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 600px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Homework4</h2>
+
+<header>
+  <h2>Cities</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="Introduction.html">自我介紹</a></li>
+      <li><a href="School.html">就讀學校</a></li>
+      <li><a href="Picture.html">生活照</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>自我介紹</h1>
+    <p>我是廖柏雅(Liao Bo-Ya)，20年前的12月19日誕生於天母，</p>
+    <p>不高也不瘦，目前就讀於台灣科技大學資訊管理系二年級。</p>
+    <p>家庭組成包括我有四人，父親是攝影師，母親是公務人員，哥哥在成功大學讀研究所，</p>
+    <p>平常喜歡聽音樂或畫畫來紓壓，最近的擔憂是天母發生命案，有點心驚驚...</p>
+  </article>
+
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
